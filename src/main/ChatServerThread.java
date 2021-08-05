@@ -44,7 +44,7 @@ public class ChatServerThread extends Thread
 			Functions.printMessage(ID + " ERROR sending: " + ioe.getMessage());
 			server.removeClient(ID);
 			ID = "";// set ID -1 for the thread...
-			System.exit(0);
+			//System.exit(0);
 		}
 	}
 

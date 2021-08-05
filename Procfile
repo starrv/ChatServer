@@ -1,1 +1,1 @@
-web: java -jar app.jar $PORT
+web: java -jar app.jar

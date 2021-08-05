@@ -1,5 +1,7 @@
 package main;
 
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import java.io.IOException;
 import java.net.ServerSocket;
 import java.net.Socket;
@@ -9,7 +11,7 @@ import main.ChatServerThread;
 import main.Functions;
 import main.OneTimePad;
 
-public class ChatServer implements Runnable
+public class ChatServer implements Runnable, KeyListener
 {
 	private ChatServerThread clients[] = new ChatServerThread[50];
 	private ServerSocket server = null;
@@ -265,6 +267,27 @@ public class ChatServer implements Runnable
 	public ChatServerThread[] getClients()
 	{
 		return clients;
+	}
+
+
+	@Override
+	public void keyTyped(KeyEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println(e.getKeyCode());
+	}
+
+
+	@Override
+	public void keyPressed(KeyEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println(e.getKeyCode());
+	}
+
+
+	@Override
+	public void keyReleased(KeyEvent e) {
+		// TODO Auto-generated method stub
+		System.out.println(e.getKeyCode());
 	}
 
 }

@@ -1,1 +1,1 @@
-deploy:jar target/my-app.jar 8080
+web:jar target/my-app.jar 8080

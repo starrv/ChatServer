@@ -1,1 +1,1 @@
-web:java jar target/my-app.jar 8080
+web: java -jar target/my-app.jar 8080

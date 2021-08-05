@@ -5,5 +5,5 @@
  * @author valenciastarr
  *
  */
-module chatServer {
+interface chatServer {
 }

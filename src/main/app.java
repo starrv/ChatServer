@@ -8,8 +8,7 @@ public class app implements KeyListener
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		//ChatServer server=new ChatServer(Integer.parseInt(args[0]));
-		ChatServer server=new ChatServer(80);
+		ChatServer server=new ChatServer(Integer.parseInt(args[0]));
 	}
 
 	@Override

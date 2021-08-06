@@ -1,1 +1,1 @@
-web: java -jar app.jar 80
+web: java -jar app.jar $PORT

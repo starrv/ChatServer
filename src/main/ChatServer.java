@@ -2,10 +2,15 @@ package main;
 
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.PrintStream;
 import java.net.ServerSocket;
 import java.net.Socket;
 import java.net.SocketPermission;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 
 import main.ChatServerThread;
 import main.Functions;
@@ -30,6 +35,17 @@ public class ChatServer implements Runnable, KeyListener
 	
 	private int createServer(int port)
 	{
+		PrintStream o=null;
+		try
+		{
+			o = new PrintStream(new FileOutputStream("./log.txt",true));
+			System.setOut(o); 
+		} 
+		catch (FileNotFoundException e) 
+		{
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
 		Functions.printMessage("Trying with port "+port);
 		try
 		{
@@ -87,7 +103,7 @@ public class ChatServer implements Runnable, KeyListener
 		}
 	}
 	
-	public synchronized void handlePrivateEncrypted(String ID, String fromID, String input, String key)
+	/*public synchronized void handlePrivateEncrypted(String ID, String fromID, String input, String key)
 	{
 		if(findClient(ID)!=-1)
 		{
@@ -104,24 +120,48 @@ public class ChatServer implements Runnable, KeyListener
 		{
 			clients[findClient(fromID)].send("Couldn't send message, no such user with ID " + ID);
 		}
-	}
+	}*/
 	
-	
-	public synchronized void handlePrivate(String ID, String fromID, String input)
+	public synchronized void handle(String fromID, String input, String key)
 	{
-		if(findClient(ID)!=-1)
+		String message=OneTimePad.decryptMessage(input, key);
+		Functions.printMessage("Message from " + fromID+ ": " + message);
+		for(int i=0; i<clientCount; i++)
 		{
-			clients[findClient(ID)].send("Private message from User " + fromID + ": " +input);
-			clients[findClient(fromID)].send("You said: " +input);
-			Functions.printMessage("Private message '"+input+"' sent from " + fromID+" to "+ID);
-			if(input.equals("bye"))
+			if(clients[i].getID()!=fromID)
 			{
-				removeClient(fromID);
+				clients[i].send("User " + fromID + " said: " +message);
+			}
+			else
+			{
+				clients[i].send("You said: " +message);
 			}
 		}
-		else
+		if(input.equals("bye"))
 		{
-			clients[findClient(fromID)].send("Couldn't send message, no such user with ID " + ID);
+			removeClient(fromID);
+		}	
+	}
+	
+	public synchronized void handlePrivate(String[] toIDs, String fromID, String input, String key)
+	{
+		String message=OneTimePad.decryptMessage(input, key);
+		for(int i=0; i<toIDs.length; i++)
+		{
+			if(findClient(toIDs[i])!=-1)
+			{
+				clients[findClient(toIDs[i])].send("Private message from User " + fromID + ": " +message);
+				clients[findClient(fromID)].send("You said: " +message);
+				Functions.printMessage("Private message '"+message+"' sent from " + fromID+" to "+toIDs[i]);
+				if(message.equals("bye"))
+				{
+					removeClient(fromID);
+				}
+			}
+			else
+			{
+				clients[findClient(fromID)].send("Couldn't send message, no such user with ID " + toIDs[i]);
+			}
 		}
 	}
 	private void sendToAllButOne(String message, String ID)
@@ -153,26 +193,6 @@ public class ChatServer implements Runnable, KeyListener
 		{
 			clients[i].send(message);
 		}
-	}
-	
-	public synchronized void handle(String ID, String input)
-	{
-			Functions.printMessage("Message from " + ID+ ": " + input);
-			for(int i=0; i<clientCount; i++)
-			{
-				if(clients[i].getID()!=ID)
-				{
-					clients[i].send("User " + ID + " said: " +input);
-				}
-				else
-				{
-					clients[i].send("You said: " +input);
-				}
-			}
-			if(input.equals("bye"))
-			{
-				removeClient(ID);
-			}	
 	}
 	
 	public synchronized void removeClient(String ID)
@@ -288,6 +308,13 @@ public class ChatServer implements Runnable, KeyListener
 	public void keyReleased(KeyEvent e) {
 		// TODO Auto-generated method stub
 		System.out.println(e.getKeyCode());
+	}
+	
+	static void printTime()
+	{
+	   DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");  
+	   LocalDateTime now = LocalDateTime.now();  
+	   System.out.print("@ "+dtf.format(now)+": ");  
 	}
 
 }

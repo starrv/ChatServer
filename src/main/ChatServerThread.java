@@ -58,20 +58,19 @@ public class ChatServerThread extends Thread
 			try {
 				String line = streamIn.readUTF();
 				StringTokenizer tokenizer = new StringTokenizer(line, "~");
-				if (tokenizer.countTokens() <= 1) {
-					server.handle(ID, line);
+				if (tokenizer.countTokens() <= 2) {
+					String message = tokenizer.nextToken();
+					String key = tokenizer.nextToken();
+					server.handle(ID, message,key);
 				} else {
 					Functions.printMessage(line + " has " + tokenizer.countTokens()
 							+ " tokens.");
-					String prefix = tokenizer.nextToken();
-					String toID = tokenizer.nextToken();
+					//get prefix
+					tokenizer.nextToken();
+					String[] toIDs = tokenizer.nextToken().split(",");
 					String message = tokenizer.nextToken();
-					if (prefix.equalsIgnoreCase("private")) {
-						server.handlePrivate(toID, ID, message);
-					} else if (prefix.equalsIgnoreCase("privateEncrypted")) {
-						String key = tokenizer.nextToken();
-						server.handlePrivateEncrypted(toID, ID, message, key);
-					}
+					String key = tokenizer.nextToken();
+					server.handlePrivate(toIDs, ID, message, key);
 				}
 			} catch (IOException ioe) {
 				// Functions.printMessage(ID + "ERROR reading: " +

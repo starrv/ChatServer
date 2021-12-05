@@ -1,0 +1,157 @@
+@ 2021/12/05 13:24:04: Trying with port 80
+@ 2021/12/05 13:24:04: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 13:24:04: Binding to port 80 please wait...
+@ 2021/12/05 13:24:04: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 13:24:04: Waiting for a client...
+@ 2021/12/05 13:24:18: Client 1 accepted on : Socket[addr=/127.0.0.1,port=49597,localport=80]
+@ 2021/12/05 13:24:18: Chat Server Thread Info: server: main.ChatServer@6699f8eb socket: Socket[addr=/127.0.0.1,port=49597,localport=80] ID: JLvhL
+@ 2021/12/05 13:24:18: Server Thread JLvhL running.
+@ 2021/12/05 13:24:18: ids~The IDs of the group chat participants are: 
+You: JLvhL
+@ 2021/12/05 13:24:18: Waiting for a client...
+@ 2021/12/05 13:24:18: Message from JLvhL: hello
+@ 2021/12/05 13:24:25: Message from JLvhL: Hi all
+@ 2021/12/05 13:24:42: private~JLvhL~mz9g!m~895852 has 4 tokens.
+@ 2021/12/05 13:24:42: finding client with ID JLvhL
+@ 2021/12/05 13:24:42: Found client with ID named JLvhL
+@ 2021/12/05 13:24:42: finding client with ID JLvhL
+@ 2021/12/05 13:24:42: Found client with ID named JLvhL
+@ 2021/12/05 13:24:42: finding client with ID JLvhL
+@ 2021/12/05 13:24:42: Found client with ID named JLvhL
+@ 2021/12/05 13:24:42: Private message 'hi all' sent from JLvhL to JLvhL
+@ 2021/12/05 13:24:58: private~JLvhL~(a(RanLQ9Xee~314614676690 has 4 tokens.
+@ 2021/12/05 13:24:58: finding client with ID JLvhL
+@ 2021/12/05 13:24:58: Found client with ID named JLvhL
+@ 2021/12/05 13:24:58: finding client with ID JLvhL
+@ 2021/12/05 13:24:58: Found client with ID named JLvhL
+@ 2021/12/05 13:24:58: finding client with ID JLvhL
+@ 2021/12/05 13:24:58: Found client with ID named JLvhL
+@ 2021/12/05 13:24:58: Private message 'hey everyone' sent from JLvhL to JLvhL
+@ 2021/12/05 13:25:07: private~JLvhL,efedfe~hz~09 has 4 tokens.
+@ 2021/12/05 13:25:07: finding client with ID JLvhL
+@ 2021/12/05 13:25:07: Found client with ID named JLvhL
+@ 2021/12/05 13:25:07: finding client with ID JLvhL
+@ 2021/12/05 13:25:07: Found client with ID named JLvhL
+@ 2021/12/05 13:25:07: finding client with ID JLvhL
+@ 2021/12/05 13:25:07: Found client with ID named JLvhL
+@ 2021/12/05 13:25:07: Private message 'hi' sent from JLvhL to JLvhL
+@ 2021/12/05 13:25:07: finding client with ID efedfe
+@ 2021/12/05 13:25:07: No such client with ID efedfe
+@ 2021/12/05 13:25:07: finding client with ID JLvhL
+@ 2021/12/05 13:25:07: Found client with ID named JLvhL
+@ 2021/12/05 13:33:23: Trying with port 80
+@ 2021/12/05 13:33:23: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 13:33:23: Binding to port 80 please wait...
+@ 2021/12/05 13:33:23: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 13:33:23: Waiting for a client...
+@ 2021/12/05 13:33:38: Client 1 accepted on : Socket[addr=/127.0.0.1,port=49604,localport=80]
+@ 2021/12/05 13:33:38: Chat Server Thread Info: server: main.ChatServer@33bd8b69 socket: Socket[addr=/127.0.0.1,port=49604,localport=80] ID: GssaL
+@ 2021/12/05 13:33:38: Server Thread GssaL running.
+@ 2021/12/05 13:33:38: ids~The IDs of the group chat participants are: 
+You: GssaL
+@ 2021/12/05 13:33:38: Waiting for a client...
+@ 2021/12/05 13:33:38: Message from GssaL: hello
+@ 2021/12/05 13:39:18: Trying with port 80
+@ 2021/12/05 13:39:18: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 13:39:18: Binding to port 80 please wait...
+@ 2021/12/05 13:39:18: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 13:39:18: Waiting for a client...
+@ 2021/12/05 13:39:28: Client 1 accepted on : Socket[addr=/127.0.0.1,port=49615,localport=80]
+@ 2021/12/05 13:39:28: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=49615,localport=80] ID: Eoawu
+@ 2021/12/05 13:39:28: Server Thread Eoawu running.
+@ 2021/12/05 13:39:28: ids~The IDs of the group chat participants are: 
+You: Eoawu
+@ 2021/12/05 13:39:28: Waiting for a client...
+@ 2021/12/05 13:39:28: Message from Eoawu: hello
+@ 2021/12/05 13:39:42: Message from Eoawu: hi all
+@ 2021/12/05 13:40:09: private~Eoawu~mo oz,el+~830115085 has 4 tokens.
+@ 2021/12/05 13:40:09: finding client with ID Eoawu
+@ 2021/12/05 13:40:09: Found client with ID named Eoawu
+@ 2021/12/05 13:40:09: finding client with ID Eoawu
+@ 2021/12/05 13:40:09: Found client with ID named Eoawu
+@ 2021/12/05 13:40:09: finding client with ID Eoawu
+@ 2021/12/05 13:40:09: Found client with ID named Eoawu
+@ 2021/12/05 13:40:09: Private message 'hi friend' sent from Eoawu to Eoawu
+@ 2021/12/05 13:40:22: private~Eoawu,gkseg~p2R;QBFby~966578712 has 4 tokens.
+@ 2021/12/05 13:40:22: finding client with ID Eoawu
+@ 2021/12/05 13:40:22: Found client with ID named Eoawu
+@ 2021/12/05 13:40:22: finding client with ID Eoawu
+@ 2021/12/05 13:40:22: Found client with ID named Eoawu
+@ 2021/12/05 13:40:22: finding client with ID Eoawu
+@ 2021/12/05 13:40:22: Found client with ID named Eoawu
+@ 2021/12/05 13:40:22: Private message 'hi friend' sent from Eoawu to Eoawu
+@ 2021/12/05 13:40:22: finding client with ID gkseg
+@ 2021/12/05 13:40:22: No such client with ID gkseg
+@ 2021/12/05 13:40:22: finding client with ID Eoawu
+@ 2021/12/05 13:40:22: Found client with ID named Eoawu
+@ 2021/12/05 13:40:39: private~Eoawu+gkseg~(oH)QBp.e~337478233 has 4 tokens.
+@ 2021/12/05 13:40:39: finding client with ID Eoawu+gkseg
+@ 2021/12/05 13:40:39: No such client with ID Eoawu+gkseg
+@ 2021/12/05 13:40:39: finding client with ID Eoawu
+@ 2021/12/05 13:40:39: Found client with ID named Eoawu
+@ 2021/12/05 13:41:29: Trying with port 80
+@ 2021/12/05 13:41:29: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 13:41:29: Binding to port 80 please wait...
+@ 2021/12/05 13:41:29: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 13:41:29: ERROR: Address already in use (Bind failed)
+@ 2021/12/05 13:41:38: Client 2 accepted on : Socket[addr=/127.0.0.1,port=49616,localport=80]
+@ 2021/12/05 13:41:38: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=49616,localport=80] ID: ykohO
+@ 2021/12/05 13:41:38: @ 2021/12/05 13:41:38: Server Thread ykohO running.
+ids~The IDs of the group chat participants are: 
+ykohO
+You: Eoawu
+@ 2021/12/05 13:41:38: ids~The IDs of the group chat participants are: 
+Eoawu
+You: ykohO
+@ 2021/12/05 13:41:38: Waiting for a client...
+@ 2021/12/05 13:41:38: Message from ykohO: hello
+@ 2021/12/05 13:41:38: Eoawu ERROR sending: Broken pipe (Write failed)
+@ 2021/12/05 13:41:38: finding client with ID Eoawu
+@ 2021/12/05 13:41:38: Found client with ID named Eoawu
+@ 2021/12/05 13:41:38: Removing client 1 with ID Eoawu
+@ 2021/12/05 13:41:38: ids~The IDs of the group chat participants are: 
+You: ykohO
+@ 2021/12/05 13:41:38: Error closing thread: java.net.SocketException: Socket closed
+@ 2021/12/05 13:41:42: Message from ykohO: hi
+@ 2021/12/05 13:42:59: Trying with port 80
+@ 2021/12/05 13:42:59: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 13:42:59: Binding to port 80 please wait...
+@ 2021/12/05 13:42:59: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 13:42:59: Waiting for a client...
+@ 2021/12/05 13:43:07: Client 1 accepted on : Socket[addr=/127.0.0.1,port=49617,localport=80]
+@ 2021/12/05 13:43:07: Chat Server Thread Info: server: main.ChatServer@6699f8eb socket: Socket[addr=/127.0.0.1,port=49617,localport=80] ID: _TQeH
+@ 2021/12/05 13:43:07: Server Thread _TQeH running.
+@ 2021/12/05 13:43:07: ids~The IDs of the group chat participants are: 
+You: _TQeH
+@ 2021/12/05 13:43:07: Waiting for a client...
+@ 2021/12/05 13:43:07: Message from _TQeH: hello
+@ 2021/12/05 13:43:12: Message from _TQeH: hi everyone
+@ 2021/12/05 13:43:23: private~_TQeH~(i!'EzFbM~309689717 has 4 tokens.
+@ 2021/12/05 13:43:23: finding client with ID _TQeH
+@ 2021/12/05 13:43:23: Found client with ID named _TQeH
+@ 2021/12/05 13:43:23: finding client with ID _TQeH
+@ 2021/12/05 13:43:23: Found client with ID named _TQeH
+@ 2021/12/05 13:43:23: finding client with ID _TQeH
+@ 2021/12/05 13:43:23: Found client with ID named _TQeH
+@ 2021/12/05 13:43:23: Private message 'hi friend' sent from _TQeH to _TQeH
+@ 2021/12/05 13:43:35: private~_TQeH,hdfet~co$;no?nM~132533307 has 4 tokens.
+@ 2021/12/05 13:43:35: finding client with ID _TQeH
+@ 2021/12/05 13:43:35: Found client with ID named _TQeH
+@ 2021/12/05 13:43:35: finding client with ID _TQeH
+@ 2021/12/05 13:43:35: Found client with ID named _TQeH
+@ 2021/12/05 13:43:35: finding client with ID _TQeH
+@ 2021/12/05 13:43:35: Found client with ID named _TQeH
+@ 2021/12/05 13:43:35: Private message 'hi friend' sent from _TQeH to _TQeH
+@ 2021/12/05 13:43:35: finding client with ID hdfet
+@ 2021/12/05 13:43:35: No such client with ID hdfet
+@ 2021/12/05 13:43:35: finding client with ID _TQeH
+@ 2021/12/05 13:43:35: Found client with ID named _TQeH
+@ 2021/12/05 13:43:46: private~_TQeH hdfet~ w f3,Lns~220065609 has 4 tokens.
+@ 2021/12/05 13:43:46: finding client with ID _TQeH hdfet
+@ 2021/12/05 13:43:46: No such client with ID _TQeH hdfet
+@ 2021/12/05 13:43:46: finding client with ID _TQeH
+@ 2021/12/05 13:43:46: Found client with ID named _TQeH
+@ 2021/12/05 13:43:54: Message from _TQeH: bye
+@ 2021/12/05 13:43:54: finding client with ID _TQeH
+@ 2021/12/05 13:43:54: Found client with ID named _TQeH
+@ 2021/12/05 13:43:54: Removing client 1 with ID _TQeH

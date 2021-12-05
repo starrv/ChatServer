@@ -67,7 +67,7 @@ public class ChatServerThread extends Thread
 							+ " tokens.");
 					//get prefix
 					tokenizer.nextToken();
-					String[] toIDs = tokenizer.nextToken().split(",");
+					String[] toIDs = tokenizer.nextToken().split(" ");
 					String message = tokenizer.nextToken();
 					String key = tokenizer.nextToken();
 					server.handlePrivate(toIDs, ID, message, key);

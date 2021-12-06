@@ -370,3 +370,202 @@ You: glpDG
 @ 2021/12/05 18:26:37: finding client with ID glpDG
 @ 2021/12/05 18:26:37: Found client with ID named glpDG
 @ 2021/12/05 18:26:37: Removing client 1 with ID glpDG
+@ 2021/12/05 22:30:14: Trying with port 80
+@ 2021/12/05 22:30:14: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 22:30:14: Binding to port 80 please wait...
+@ 2021/12/05 22:30:14: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 22:30:14: Waiting for a client...
+@ 2021/12/05 22:30:21: Client 1 accepted on : Socket[addr=/127.0.0.1,port=62963,localport=80]
+@ 2021/12/05 22:30:21: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=62963,localport=80] ID: CgREu
+@ 2021/12/05 22:30:21: Server Thread CgREu running.
+@ 2021/12/05 22:30:21: ids~The IDs of the group chat participants are: 
+You: CgREu
+@ 2021/12/05 22:30:21: Waiting for a client...
+@ 2021/12/05 22:30:21: Message from CgREu: hello
+@ 2021/12/05 22:30:39: Client 2 accepted on : Socket[addr=/127.0.0.1,port=63021,localport=80]
+@ 2021/12/05 22:30:39: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=63021,localport=80] ID: A_EWI
+@ 2021/12/05 22:30:39: ids~The IDs of the group chat participants are: 
+A_EWI
+You: CgREu
+@ 2021/12/05 22:30:39: Server Thread A_EWI running.
+@ 2021/12/05 22:30:39: ids~The IDs of the group chat participants are: 
+CgREu
+You: A_EWI
+@ 2021/12/05 22:30:39: Waiting for a client...
+@ 2021/12/05 22:30:39: Message from A_EWI: hello
+@ 2021/12/05 22:30:49: Client 3 accepted on : Socket[addr=/127.0.0.1,port=63044,localport=80]
+@ 2021/12/05 22:30:49: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=63044,localport=80] ID: szBri
+@ 2021/12/05 22:30:49: Server Thread szBri running.
+@ 2021/12/05 22:30:49: ids~The IDs of the group chat participants are: 
+A_EWI
+szBri
+You: CgREu
+@ 2021/12/05 22:30:49: ids~The IDs of the group chat participants are: 
+CgREu
+szBri
+You: A_EWI
+@ 2021/12/05 22:30:49: ids~The IDs of the group chat participants are: 
+CgREu
+A_EWI
+You: szBri
+@ 2021/12/05 22:30:49: Waiting for a client...
+@ 2021/12/05 22:30:49: Message from szBri: hello
+@ 2021/12/05 22:30:55: Client 4 accepted on : Socket[addr=/127.0.0.1,port=63045,localport=80]
+@ 2021/12/05 22:30:55: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=63045,localport=80] ID: VGttO
+@ 2021/12/05 22:30:55: ids~The IDs of the group chat participants are: 
+A_EWI
+szBri
+VGttO
+You: CgREu
+@ 2021/12/05 22:30:55: Server Thread VGttO running.
+@ 2021/12/05 22:30:55: ids~The IDs of the group chat participants are: 
+CgREu
+szBri
+VGttO
+You: A_EWI
+@ 2021/12/05 22:30:55: ids~The IDs of the group chat participants are: 
+CgREu
+A_EWI
+VGttO
+You: szBri
+@ 2021/12/05 22:30:55: ids~The IDs of the group chat participants are: 
+CgREu
+A_EWI
+szBri
+You: VGttO
+@ 2021/12/05 22:30:55: Waiting for a client...
+@ 2021/12/05 22:30:55: Message from VGttO: hello
+@ 2021/12/05 22:31:24: Message from VGttO: Hi everyone
+@ 2021/12/05 22:32:07: private~CgREu A_EWI~Pi!kd2+J..~9093964741 has 4 tokens.
+@ 2021/12/05 22:32:07: finding client with ID CgREu
+@ 2021/12/05 22:32:07: Found client with ID named CgREu
+@ 2021/12/05 22:32:07: finding client with ID CgREu
+@ 2021/12/05 22:32:07: Found client with ID named CgREu
+@ 2021/12/05 22:32:07: finding client with ID VGttO
+@ 2021/12/05 22:32:07: Found client with ID named VGttO
+@ 2021/12/05 22:32:07: Private message 'Hi friend ' sent from VGttO to CgREu
+@ 2021/12/05 22:32:07: finding client with ID A_EWI
+@ 2021/12/05 22:32:07: Found client with ID named A_EWI
+@ 2021/12/05 22:32:07: finding client with ID A_EWI
+@ 2021/12/05 22:32:07: Found client with ID named A_EWI
+@ 2021/12/05 22:32:07: finding client with ID VGttO
+@ 2021/12/05 22:32:07: Found client with ID named VGttO
+@ 2021/12/05 22:32:07: Private message 'Hi friend ' sent from VGttO to A_EWI
+@ 2021/12/05 22:32:32: Message from szBri: bye
+@ 2021/12/05 22:32:32: finding client with ID szBri
+@ 2021/12/05 22:32:32: Found client with ID named szBri
+@ 2021/12/05 22:32:32: Removing client 3 with ID szBri
+@ 2021/12/05 22:32:32: ids~The IDs of the group chat participants are: 
+A_EWI
+VGttO
+You: CgREu
+@ 2021/12/05 22:32:32: ids~The IDs of the group chat participants are: 
+CgREu
+VGttO
+You: A_EWI
+@ 2021/12/05 22:32:32: ids~The IDs of the group chat participants are: 
+CgREu
+A_EWI
+You: VGttO
+@ 2021/12/05 22:32:56: Message from VGttO: bye
+@ 2021/12/05 22:32:56: finding client with ID VGttO
+@ 2021/12/05 22:32:56: Found client with ID named VGttO
+@ 2021/12/05 22:32:56: Removing client 3 with ID VGttO
+@ 2021/12/05 22:32:56: ids~The IDs of the group chat participants are: 
+A_EWI
+You: CgREu
+@ 2021/12/05 22:32:56: ids~The IDs of the group chat participants are: 
+CgREu
+You: A_EWI
+@ 2021/12/05 22:33:13: Message from A_EWI: bye
+@ 2021/12/05 22:33:13: finding client with ID A_EWI
+@ 2021/12/05 22:33:13: Found client with ID named A_EWI
+@ 2021/12/05 22:33:13: Removing client 2 with ID A_EWI
+@ 2021/12/05 22:33:13: ids~The IDs of the group chat participants are: 
+You: CgREu
+@ 2021/12/05 22:33:25: Message from CgREu: bye
+@ 2021/12/05 22:33:25: finding client with ID CgREu
+@ 2021/12/05 22:33:25: Found client with ID named CgREu
+@ 2021/12/05 22:33:25: Removing client 1 with ID CgREu
+@ 2021/12/05 22:35:39: Client 1 accepted on : Socket[addr=/127.0.0.1,port=63157,localport=80]
+@ 2021/12/05 22:35:39: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=63157,localport=80] ID: WPOKU
+@ 2021/12/05 22:35:39: ids~The IDs of the group chat participants are: 
+You: WPOKU
+@ 2021/12/05 22:35:39: @ 2021/12/05 22:35:39: Waiting for a client...
+Server Thread WPOKU running.
+@ 2021/12/05 22:35:39: Message from WPOKU: hello
+@ 2021/12/05 22:35:52: Client 2 accepted on : Socket[addr=/127.0.0.1,port=63158,localport=80]
+@ 2021/12/05 22:35:52: Chat Server Thread Info: server: main.ChatServer@326acbad socket: Socket[addr=/127.0.0.1,port=63158,localport=80] ID: fMkdk
+@ 2021/12/05 22:35:52: ids~The IDs of the group chat participants are: 
+fMkdk
+You: WPOKU
+@ 2021/12/05 22:35:52: Server Thread fMkdk running.
+@ 2021/12/05 22:35:52: ids~The IDs of the group chat participants are: 
+WPOKU
+You: fMkdk
+@ 2021/12/05 22:35:52: Waiting for a client...
+@ 2021/12/05 22:35:52: Message from fMkdk: hello
+@ 2021/12/05 22:36:14: Message from WPOKU: bye
+@ 2021/12/05 22:36:14: finding client with ID WPOKU
+@ 2021/12/05 22:36:14: Found client with ID named WPOKU
+@ 2021/12/05 22:36:14: Removing client 1 with ID WPOKU
+@ 2021/12/05 22:36:14: ids~The IDs of the group chat participants are: 
+You: fMkdk
+@ 2021/12/05 22:36:15: Message from fMkdk: bye
+@ 2021/12/05 22:36:15: finding client with ID fMkdk
+@ 2021/12/05 22:36:15: Found client with ID named fMkdk
+@ 2021/12/05 22:36:15: Removing client 1 with ID fMkdk
+@ 2021/12/05 22:38:43: Trying with port 80
+@ 2021/12/05 22:38:43: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 22:38:43: Binding to port 80 please wait...
+@ 2021/12/05 22:38:43: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 22:38:43: ERROR: Address already in use (Bind failed)
+@ 2021/12/05 22:38:53: Trying with port 80
+@ 2021/12/05 22:38:53: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 22:38:53: Binding to port 80 please wait...
+@ 2021/12/05 22:38:53: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 22:38:53: Waiting for a client...
+@ 2021/12/05 22:39:00: Client 1 accepted on : Socket[addr=/127.0.0.1,port=63276,localport=80]
+@ 2021/12/05 22:39:00: Chat Server Thread Info: server: main.ChatServer@49b81bd9 socket: Socket[addr=/127.0.0.1,port=63276,localport=80] ID: Dehjk
+@ 2021/12/05 22:39:00: Server Thread Dehjk running.
+@ 2021/12/05 22:39:00: ids~The IDs of the group chat participants are: 
+You: Dehjk
+@ 2021/12/05 22:39:00: Waiting for a client...
+@ 2021/12/05 22:39:00: Message from Dehjk: hello
+@ 2021/12/05 22:39:08: Client 2 accepted on : Socket[addr=/127.0.0.1,port=63278,localport=80]
+@ 2021/12/05 22:39:08: Chat Server Thread Info: server: main.ChatServer@49b81bd9 socket: Socket[addr=/127.0.0.1,port=63278,localport=80] ID: MlyaX
+@ 2021/12/05 22:39:08: Server Thread MlyaX running.
+@ 2021/12/05 22:39:08: ids~The IDs of the group chat participants are: 
+MlyaX
+You: Dehjk
+@ 2021/12/05 22:39:08: ids~The IDs of the group chat participants are: 
+Dehjk
+You: MlyaX
+@ 2021/12/05 22:39:08: Waiting for a client...
+@ 2021/12/05 22:39:08: Message from MlyaX: hello
+@ 2021/12/05 22:39:29: Message from Dehjk: bye
+@ 2021/12/05 22:39:29: finding client with ID Dehjk
+@ 2021/12/05 22:39:29: Found client with ID named Dehjk
+@ 2021/12/05 22:39:29: Removing client 1 with ID Dehjk
+@ 2021/12/05 22:39:29: ids~The IDs of the group chat participants are: 
+You: MlyaX
+@ 2021/12/05 22:39:30: Message from MlyaX: bye
+@ 2021/12/05 22:39:30: finding client with ID MlyaX
+@ 2021/12/05 22:39:30: Found client with ID named MlyaX
+@ 2021/12/05 22:39:30: Removing client 1 with ID MlyaX
+@ 2021/12/05 22:40:52: Trying with port 80
+@ 2021/12/05 22:40:52: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/05 22:40:52: Binding to port 80 please wait...
+@ 2021/12/05 22:40:52: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/05 22:40:52: Waiting for a client...
+@ 2021/12/05 22:41:00: Client 1 accepted on : Socket[addr=/127.0.0.1,port=63395,localport=80]
+@ 2021/12/05 22:41:00: Chat Server Thread Info: server: main.ChatServer@c586501 socket: Socket[addr=/127.0.0.1,port=63395,localport=80] ID: AITMV
+@ 2021/12/05 22:41:00: Server Thread AITMV running.
+@ 2021/12/05 22:41:00: ids~The IDs of the group chat participants are: 
+You: AITMV
+@ 2021/12/05 22:41:00: Waiting for a client...
+@ 2021/12/05 22:41:00: Message from AITMV: hello
+@ 2021/12/05 22:41:04: Message from AITMV: bye
+@ 2021/12/05 22:41:04: finding client with ID AITMV
+@ 2021/12/05 22:41:04: Found client with ID named AITMV
+@ 2021/12/05 22:41:04: Removing client 1 with ID AITMV

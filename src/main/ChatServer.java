@@ -164,7 +164,8 @@ public class ChatServer implements Runnable, KeyListener
 			}
 		}
 	}
-	private void sendToAllButOne(String message, String ID)
+	
+	/*private void sendToAllButOne(String message, String ID)
 	{
 		for(int i=0; i<clientCount; i++)
 		{
@@ -173,7 +174,7 @@ public class ChatServer implements Runnable, KeyListener
 				clients[i].send(message);
 			}
 		}
-	}
+	}*/
 	
 	private void send(String message, String ID)
 	{
@@ -187,13 +188,13 @@ public class ChatServer implements Runnable, KeyListener
 		}
 	}
 	
-	private void sendToAll(String message)
+	/*private void sendToAll(String message)
 	{
 		for(int i=0; i<clientCount; i++)
 		{
 			clients[i].send(message);
 		}
-	}
+	}*/
 	
 	public synchronized void removeClient(String ID)
 	{
@@ -210,7 +211,7 @@ public class ChatServer implements Runnable, KeyListener
 				}
 			}
 			clientCount--;
-			sendToAll("Client "+(pos+1)+" with ID "+ ID + " removed");
+			//sendToAll("Client "+(pos+1)+" with ID "+ ID + " removed");
 			printAllClients();
 			try
 			{
@@ -268,7 +269,7 @@ public class ChatServer implements Runnable, KeyListener
 					clients[clientCount].open();
 					clients[clientCount].start();
 					clientCount++;
-					sendToAllButOne("Client "+ clientCount + " accepted with ID "+clients[clientCount-1].getID(), clients[clientCount-1].getID());
+					//sendToAllButOne("Client "+ clientCount + " accepted with ID "+clients[clientCount-1].getID(), clients[clientCount-1].getID());
 					send("id~"+clients[clientCount-1].getID(),clients[clientCount-1].getID());
 					printAllClients();
 				}

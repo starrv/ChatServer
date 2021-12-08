@@ -3,7 +3,7 @@ package main;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
-public class app implements KeyListener
+public class App implements KeyListener
 {
 
 	public static void main(String[] args) {

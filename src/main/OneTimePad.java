@@ -9,8 +9,10 @@ public class OneTimePad {
 			'm','i','r','z','d','w','s','j','y',
 			'f','o','n','b','e','a','h','c','p',
 			'k',' ','.','!','?','$','(',')',',','/',
-			'-','+','*','"','^','=',';','0','1','2','3','4','5','6','7','8','9','\''
-			};
+			'-','+','*','"','^','=',';','0','1','2',
+			'3','4','5','6','7','8','9','\'',':',
+			'\n'
+		};
 		
 		private String plainMessage ="";
 		private String encryptedMessage = "";
@@ -33,6 +35,13 @@ public class OneTimePad {
 		public String getPlainMessage()
 		{
 			return plainMessage;
+		}
+		
+		public void setPlainMessage(String msg)
+		{
+			plainMessage=msg;
+			currentKey= generateKey(msg);
+			encryptedMessage = encrypt(msg);
 		}
 		
 		public String getCurrentKey()
@@ -69,15 +78,22 @@ public class OneTimePad {
 		{
 			String encMsg="";
 			for(int i=0; i<plainMsg.length(); i++){
-				//Functions.printMessage("inside encrypt for loop at "+i+" value is "+plainMsg.charAt(i));
-				//assign numerical value to each character in the plain message
-				int plainCharIndex = getNumberForChar(plainMsg.charAt(i));
-				int keyDigit=Integer.parseInt(currentKey.substring(i, i+1));
-				//Functions.printMessage("PlainChar index for value "+plainMsg.charAt(i)+ " is "+ plainCharIndex);//for debugging
-				int encryptedIndex =modPlus(plainCharIndex, (int)Math.pow(keyDigit, 2), abcVal.length);
-				//Functions.printMessage("log base e of key digit "+keyDigit+ " is "+(int)Math.log(keyDigit));	
-				//add the key to the plain message 
-				encMsg = encMsg+ abcVal[encryptedIndex];
+				if(plainMsg.charAt(i)=='~')
+				{
+					encMsg+='~';
+				}
+				else
+				{
+					//Functions.printMessage("inside encrypt for loop at "+i+" value is "+plainMsg.charAt(i));
+					//assign numerical value to each character in the plain message
+					int plainCharIndex = getNumberForChar(plainMsg.charAt(i));
+					int keyDigit=Integer.parseInt(currentKey.substring(i, i+1));
+					//Functions.printMessage("PlainChar index for value "+plainMsg.charAt(i)+ " is "+ plainCharIndex);//for debugging
+					int encryptedIndex =modPlus(plainCharIndex, (int)Math.pow(keyDigit, 2), abcVal.length);
+					//Functions.printMessage("log base e of key digit "+keyDigit+ " is "+(int)Math.log(keyDigit));	
+					//add the key to the plain message 
+					encMsg = encMsg+ abcVal[encryptedIndex];
+				}
 			}
 			return encMsg;
 		}
@@ -92,16 +108,24 @@ public class OneTimePad {
 			}
 			return n;
 		}
+		
 		public static String decryptMessage(String msg, String key)
 		{
 			String decMsg="";
 			for(int i=0; i<msg.length(); i++){
-				//Functions.printMessage("inside encrypt for loop at "+i+" value is "+plainMsg.charAt(i));
-				//assign numerical value to each character in the plain message
-				int encCharIndex = getNumberForChar(msg.charAt(i));
-				int keyDigit=Integer.parseInt(key.substring(i, i+1));
-				int decryptedIndex =modMinus(encCharIndex, (int)Math.pow(keyDigit, 2), abcVal.length);
-				decMsg = decMsg+ abcVal[decryptedIndex];
+				if(msg.charAt(i)=='~')
+				{
+					decMsg+='~';
+				}
+				else
+				{
+					//Functions.printMessage("inside encrypt for loop at "+i+" value is "+plainMsg.charAt(i));
+					//assign numerical value to each character in the plain message
+					int encCharIndex = getNumberForChar(msg.charAt(i));
+					int keyDigit=Integer.parseInt(key.substring(i, i+1));
+					int decryptedIndex =modMinus(encCharIndex, (int)Math.pow(keyDigit, 2), abcVal.length);
+					decMsg = decMsg+ abcVal[decryptedIndex];
+				}
 			}
 			return decMsg;
 		}

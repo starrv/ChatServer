@@ -125,19 +125,27 @@ public class ChatServer implements Runnable, KeyListener
 	public synchronized void handle(String fromID, String input, String key)
 	{
 		String message=OneTimePad.decryptMessage(input, key);
-		Functions.printMessage("Message from " + fromID+ ": " + message);
+		Functions.printMessage("Message from " + fromID+ ": " +input+" decrypted as "+ message);
+		OneTimePad encryptor=new OneTimePad();
+		String newMsg;
 		for(int i=0; i<clientCount; i++)
 		{
 			if(clients[i].getID()!=fromID)
 			{
-				clients[i].send("User " + fromID + " said: " +message);
+				newMsg="User " + fromID + " said: " +message;
+				encryptor.setPlainMessage(newMsg);
+				Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+				clients[i].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
 			}
 			else
 			{
-				clients[i].send("You said: " +message);
+				newMsg="You said: " +message;
+				encryptor.setPlainMessage(newMsg);
+				Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+				clients[i].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
 			}
 		}
-		if(input.equals("bye"))
+		if(message.equals("bye"))
 		{
 			removeClient(fromID);
 		}	
@@ -146,13 +154,26 @@ public class ChatServer implements Runnable, KeyListener
 	public synchronized void handlePrivate(String[] toIDs, String fromID, String input, String key)
 	{
 		String message=OneTimePad.decryptMessage(input, key);
+		Functions.printMessage("Message from " + fromID+ ": " +input+" decrypted as "+ message);
+		OneTimePad encryptor=new OneTimePad();
+		String newMsg;
+		
+		newMsg="You said: " +message;
+		encryptor.setPlainMessage(newMsg);
+		Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+		clients[findClient(fromID)].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
+		
 		for(int i=0; i<toIDs.length; i++)
 		{
 			if(findClient(toIDs[i])!=-1)
 			{
-				clients[findClient(toIDs[i])].send("Private message from User " + fromID + ": " +message);
-				clients[findClient(fromID)].send("You said: " +message);
 				Functions.printMessage("Private message '"+message+"' sent from " + fromID+" to "+toIDs[i]);
+				
+				newMsg="Private message from User " + fromID + ": " +message;
+				encryptor.setPlainMessage(newMsg);
+				Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+				clients[findClient(toIDs[i])].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
+				
 				if(message.equals("bye"))
 				{
 					removeClient(fromID);
@@ -160,7 +181,10 @@ public class ChatServer implements Runnable, KeyListener
 			}
 			else
 			{
-				clients[findClient(fromID)].send("Couldn't send message, no such user with ID " + toIDs[i]);
+				newMsg="Couldn't send message, no such user with ID " + toIDs[i];
+				encryptor.setPlainMessage(newMsg);
+				Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+				clients[findClient(fromID)].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
 			}
 		}
 	}
@@ -252,7 +276,10 @@ public class ChatServer implements Runnable, KeyListener
 				}
 			}
 			IDs+="You: "+ID;
-			clients[i].send(IDs);
+			String newMsg=IDs;
+			OneTimePad encryptor=new OneTimePad(newMsg);
+			Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+			clients[i].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
 			Functions.printMessage(IDs);
 		}
 	}
@@ -270,7 +297,10 @@ public class ChatServer implements Runnable, KeyListener
 					clients[clientCount].start();
 					clientCount++;
 					//sendToAllButOne("Client "+ clientCount + " accepted with ID "+clients[clientCount-1].getID(), clients[clientCount-1].getID());
-					send("id~"+clients[clientCount-1].getID(),clients[clientCount-1].getID());
+					String newMsg="id~"+clients[clientCount-1].getID();
+					OneTimePad encryptor=new OneTimePad(newMsg);
+					Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+					send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey(),clients[clientCount-1].getID());
 					printAllClients();
 				}
 				catch(IOException ioe)

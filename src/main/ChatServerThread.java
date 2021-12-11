@@ -56,22 +56,59 @@ public class ChatServerThread extends Thread
 		Functions.printMessage("Server Thread " + ID + " running.");
 		while (ID != "") {
 			try {
+				// get message
 				String line = streamIn.readUTF();
+				Functions.printMessage("Line: "+line);
 				StringTokenizer tokenizer = new StringTokenizer(line, "~");
-				if (tokenizer.countTokens() <= 2) {
-					String message = tokenizer.nextToken();
-					String key = tokenizer.nextToken();
-					server.handle(ID, message,key);
-				} else {
-					Functions.printMessage(line + " has " + tokenizer.countTokens()
-							+ " tokens.");
-					//get prefix
-					tokenizer.nextToken();
-					String[] toIDs = tokenizer.nextToken().split(" ");
-					String message = tokenizer.nextToken();
-					String key = tokenizer.nextToken();
-					server.handlePrivate(toIDs, ID, message, key);
-				}
+				String key="";
+				
+					
+					if(tokenizer.countTokens()>=2)
+					{
+						//if send to all
+						if (tokenizer.countTokens() == 2) {
+							String message=tokenizer.nextToken();
+							String oldMessage=message;
+							key=tokenizer.nextToken();
+							message=OneTimePad.decryptMessage(message, key);
+							Functions.printMessage(oldMessage+" decrypted as "+message);
+							server.handle(ID, message,key);
+						} 
+						else 
+						{
+							//Functions.printMessage(line + " has " + tokenizer.countTokens()+ " tokens.");
+							//if private
+							if(tokenizer.countTokens()==4)
+							{
+								String prefix=tokenizer.nextToken();
+								String toIDsText = tokenizer.nextToken();
+								String message = tokenizer.nextToken();
+								String oldMessage=prefix+"~"+toIDsText+"~"+message;
+								key = tokenizer.nextToken();
+								message=OneTimePad.decryptMessage(oldMessage, key);
+								Functions.printMessage(oldMessage+" decrypted as "+message);
+								
+								tokenizer=new StringTokenizer(message,"~");
+								prefix=tokenizer.nextToken();
+								String[] toIDs=tokenizer.nextToken().split(" ");
+								message=tokenizer.nextToken();
+								server.handlePrivate(toIDs, ID, message, key);
+							}
+							//if server sending info
+							else if(tokenizer.countTokens()==3)
+							{
+								String prefix=tokenizer.nextToken();
+								String message = prefix+"~"+tokenizer.nextToken();
+								String oldMessage=message;
+								key = tokenizer.nextToken();
+								message=OneTimePad.decryptMessage(message, key);
+								Functions.printMessage(oldMessage+" decrypted as "+message);
+								server.handle(ID, message, key);
+							}
+						}
+					}
+				
+				
 			} catch (IOException ioe) {
 				// Functions.printMessage(ID + "ERROR reading: " +
 				// ioe.getMessage());

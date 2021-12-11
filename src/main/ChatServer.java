@@ -124,8 +124,8 @@ public class ChatServer implements Runnable, KeyListener
 	
 	public synchronized void handle(String fromID, String input, String key)
 	{
-		String message=OneTimePad.decryptMessage(input, key);
-		Functions.printMessage("Message from " + fromID+ ": " +input+" decrypted as "+ message);
+		String message=input;
+		Functions.printMessage("Message from client " + fromID+ ": " + message);
 		OneTimePad encryptor=new OneTimePad();
 		String newMsg;
 		for(int i=0; i<clientCount; i++)
@@ -153,30 +153,35 @@ public class ChatServer implements Runnable, KeyListener
 	
 	public synchronized void handlePrivate(String[] toIDs, String fromID, String input, String key)
 	{
-		String message=OneTimePad.decryptMessage(input, key);
-		Functions.printMessage("Message from " + fromID+ ": " +input+" decrypted as "+ message);
-		OneTimePad encryptor=new OneTimePad();
-		String newMsg;
-		
-		newMsg="You said: " +message;
-		encryptor.setPlainMessage(newMsg);
+		String message=input;
+		Functions.printMessage("Message from " + fromID+ ": "+ message);
+		String newMsg="You said: " +message;
+		OneTimePad encryptor=new OneTimePad(newMsg);
 		Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
-		clients[findClient(fromID)].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
+		ChatServerThread fromClient=clients[findClient(fromID)];
+		fromClient.send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
+		int recipientClientIndex=-1;
 		
 		for(int i=0; i<toIDs.length; i++)
 		{
-			if(findClient(toIDs[i])!=-1)
+			recipientClientIndex=findClient(toIDs[i]);
+			if(recipientClientIndex!=-1)
 			{
-				Functions.printMessage("Private message '"+message+"' sent from " + fromID+" to "+toIDs[i]);
-				
-				newMsg="Private message from User " + fromID + ": " +message;
-				encryptor.setPlainMessage(newMsg);
-				Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
-				clients[findClient(toIDs[i])].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
-				
-				if(message.equals("bye"))
+				Functions.printMessage("from id: "+fromID);
+				Functions.printMessage("recipient id: "+clients[recipientClientIndex].getID());
+				if(!fromClient.getID().equals(clients[recipientClientIndex].getID()))
 				{
-					removeClient(fromID);
+					Functions.printMessage("Private message '"+message+"' sent from " + fromID+" to "+toIDs[i]);
+					
+					newMsg="Private message from User " + fromID + ": " +message;
+					encryptor.setPlainMessage(newMsg);
+					Functions.printMessage(newMsg+" encrypted as "+encryptor.getEncryptedMessage());
+					clients[recipientClientIndex].send(encryptor.getEncryptedMessage()+"~"+encryptor.getCurrentKey());
+					
+					if(message.equals("bye"))
+					{
+						removeClient(fromID);
+					}
 				}
 			}
 			else

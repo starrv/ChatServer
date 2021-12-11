@@ -1,0 +1,354 @@
+@ 2021/12/10 20:06:32: Trying with port 80
+@ 2021/12/10 20:06:32: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/10 20:06:32: Binding to port 80 please wait...
+@ 2021/12/10 20:06:32: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/10 20:06:32: Waiting for a client...
+@ 2021/12/10 20:06:37: Client 1 accepted on : Socket[addr=/127.0.0.1,port=49256,localport=80]
+@ 2021/12/10 20:06:37: Chat Server Thread Info: server: main.ChatServer@5bcbb024 socket: Socket[addr=/127.0.0.1,port=49256,localport=80] ID: VA_wj
+@ 2021/12/10 20:06:37: Server Thread VA_wj running.
+@ 2021/12/10 20:06:37: id~VA_wj encrypted as ow~G2_aM
+@ 2021/12/10 20:06:37: ids~The IDs of the group chat participants are: 
+You: VA_wj encrypted as 2+?~O(vBOYs Zf$zVX$0/Ze,-.u$o-U*rvFcr,4/v?kJ/S
+kMkf:G.LLPE8
+@ 2021/12/10 20:06:37: ids~The IDs of the group chat participants are: 
+You: VA_wj
+@ 2021/12/10 20:06:37: Waiting for a client...
+@ 2021/12/10 20:06:37: Line: "?wlo~43300
+@ 2021/12/10 20:06:37: "?wlo decrypted as hello
+@ 2021/12/10 20:06:37: Message from client VA_wj: hello
+@ 2021/12/10 20:06:37: You said: hello encrypted as J0?.j*rdmG bw',
+@ 2021/12/10 20:06:44: Client 2 accepted on : Socket[addr=/127.0.0.1,port=49257,localport=80]
+@ 2021/12/10 20:06:44: Chat Server Thread Info: server: main.ChatServer@5bcbb024 socket: Socket[addr=/127.0.0.1,port=49257,localport=80] ID: zbBlr
+@ 2021/12/10 20:06:44: id~zbBlr encrypted as ,U~ c?!z
+@ 2021/12/10 20:06:44: Server Thread zbBlr running.
+@ 2021/12/10 20:06:44: ids~The IDs of the group chat participants are: 
+zbBlr
+You: VA_wj encrypted as TUs~d(e0Mto$0ekRcpkqO0uc0qcJvigkkow.oclx*?G4VaHk
+b!Bv/ak,eGiNe*wM
+@ 2021/12/10 20:06:44: ids~The IDs of the group chat participants are: 
+zbBlr
+You: VA_wj
+@ 2021/12/10 20:06:44: ids~The IDs of the group chat participants are: 
+VA_wj
+You: zbBlr encrypted as ,yj~Xcb9mW"k,o *ua00OnW!GhYlt.,TrviFm!a
+to0Tsb
+kVtdLwcMBal'-N!C!r
+@ 2021/12/10 20:06:44: ids~The IDs of the group chat participants are: 
+VA_wj
+You: zbBlr
+@ 2021/12/10 20:06:44: Waiting for a client...
+@ 2021/12/10 20:06:44: Line: u?vuf~83919
+@ 2021/12/10 20:06:44: u?vuf decrypted as hello
+@ 2021/12/10 20:06:44: Message from client zbBlr: hello
+@ 2021/12/10 20:06:44: User zbBlr said: hello encrypted as QoeV.L!Bvr$s4FyHGYa!m0
+@ 2021/12/10 20:06:44: You said: hello encrypted as FKu-waFUT9c3b!f
+@ 2021/12/10 20:07:02: Line: =/T.$*e~zbrws~umBPVT+1e~45753603004320897877453
+@ 2021/12/10 20:07:02: =/T.$*e~zbrws~umBPVT+1e decrypted as private~zbBlr~hi friend
+@ 2021/12/10 20:07:02: Message from VA_wj: hi friend
+@ 2021/12/10 20:07:02: You said: hi friend encrypted as BKeB?hpd'0(,0knw?xd
+@ 2021/12/10 20:07:02: finding client with ID VA_wj
+@ 2021/12/10 20:07:02: Found client with ID named VA_wj
+@ 2021/12/10 20:07:02: finding client with ID zbBlr
+@ 2021/12/10 20:07:02: Found client with ID named zbBlr
+@ 2021/12/10 20:07:02: from id: VA_wj
+@ 2021/12/10 20:07:02: recipient id: zbBlr
+@ 2021/12/10 20:07:02: Private message 'hi friend' sent from VA_wj to zbBlr
+@ 2021/12/10 20:07:02: Private message from User VA_wj: hi friend encrypted as ckog4 pGg3"heybGf/a1.0G?n0kKY6j
+.VmieOrehw
+@ 2021/12/10 20:07:29: Line:  rGkiTa1.~216397154
+@ 2021/12/10 20:07:29:  rGkiTa1. decrypted as hi friend
+@ 2021/12/10 20:07:29: Message from client VA_wj: hi friend
+@ 2021/12/10 20:07:29: You said: hi friend encrypted as "fs.jkree$Y,$Rs2vhU
+@ 2021/12/10 20:07:29: User VA_wj said: hi friend encrypted as QoX3.DL_E$B7hFB:-"F.)z2v1z
+@ 2021/12/10 20:07:39: Line: -f+~414
+@ 2021/12/10 20:07:39: -f+ decrypted as bye
+@ 2021/12/10 20:07:39: Message from client zbBlr: bye
+@ 2021/12/10 20:07:39: User zbBlr said: bye encrypted as Iopnk tBDnGw4m5H nIa
+@ 2021/12/10 20:07:39: You said: bye encrypted as B,?is$rdHkcfa
+@ 2021/12/10 20:07:39: finding client with ID zbBlr
+@ 2021/12/10 20:07:39: Found client with ID named zbBlr
+@ 2021/12/10 20:07:39: Removing client 2 with ID zbBlr
+@ 2021/12/10 20:07:39: ids~The IDs of the group chat participants are: 
+You: VA_wj encrypted as mzh~^he$Oz"-ff0o53B_rnl7$qYlx$!ek*iLp,T
+RjklneH.:B0W
+ kdXwj
+@ 2021/12/10 20:07:39: ids~The IDs of the group chat participants are: 
+You: VA_wj
+@ 2021/12/10 20:07:39: finding client with ID zbBlr
+@ 2021/12/10 20:07:39: No such client with ID zbBlr
+@ 2021/12/10 20:07:39: Line: eyS~107
+@ 2021/12/10 20:07:39: eyS decrypted as bye
+@ 2021/12/10 20:07:39: Message from client VA_wj: bye
+@ 2021/12/10 20:07:39: You said: bye encrypted as qoWkwJF5m$eC3
+@ 2021/12/10 20:07:39: finding client with ID VA_wj
+@ 2021/12/10 20:07:39: Found client with ID named VA_wj
+@ 2021/12/10 20:07:39: Removing client 1 with ID VA_wj
+@ 2021/12/10 20:07:39: finding client with ID VA_wj
+@ 2021/12/10 20:07:39: No such client with ID VA_wj
+@ 2021/12/10 20:12:10: Trying with port 80
+@ 2021/12/10 20:12:10: Obtaining socket permission for localhost:80 please wait...
+@ 2021/12/10 20:12:10: Binding to port 80 please wait...
+@ 2021/12/10 20:12:10: localhost:80 can do these actions: connect,listen,accept,resolve
+@ 2021/12/10 20:12:10: Waiting for a client...
+@ 2021/12/10 20:12:16: Client 1 accepted on : Socket[addr=/127.0.0.1,port=49258,localport=80]
+@ 2021/12/10 20:12:16: Chat Server Thread Info: server: main.ChatServer@624a7c0c socket: Socket[addr=/127.0.0.1,port=49258,localport=80] ID: XNLTY
+@ 2021/12/10 20:12:16: Server Thread XNLTY running.
+@ 2021/12/10 20:12:16: id~XNLTY encrypted as mB~";L^J
+@ 2021/12/10 20:12:16: ids~The IDs of the group chat participants are: 
+You: XNLTY encrypted as 2w?~^cX-It70ae9zYX.03,u!G)VaRkc$ix2coUh/qoiJ3eeBaFn:GkXHVVP
+@ 2021/12/10 20:12:16: ids~The IDs of the group chat participants are: 
+You: XNLTY
+@ 2021/12/10 20:12:16: Waiting for a client...
+@ 2021/12/10 20:12:16: Line:  Xl'a~26072
+@ 2021/12/10 20:12:16:  Xl'a decrypted as hello
+@ 2021/12/10 20:12:16: Message from client XNLTY: hello
+@ 2021/12/10 20:12:16: You said: hello encrypted as "0:9"krUT."+umK
+@ 2021/12/10 20:12:23: Client 2 accepted on : Socket[addr=/127.0.0.1,port=49259,localport=80]
+@ 2021/12/10 20:12:23: Chat Server Thread Info: server: main.ChatServer@624a7c0c socket: Socket[addr=/127.0.0.1,port=49259,localport=80] ID: XEzdD
+@ 2021/12/10 20:12:23: id~XEzdD encrypted as rz~"zL+z
+@ 2021/12/10 20:12:23: Server Thread XEzdD running.
+@ 2021/12/10 20:12:23: ids~The IDs of the group chat participants are: 
+XEzdD
+You: XNLTY encrypted as wBj~Qu3.nDGBKk$vYpkJiK=Uk.ck8 ,a3 o)Fglh ?0hzXT9:Fldzz_F i-iUNMV:
+@ 2021/12/10 20:12:23: ids~The IDs of the group chat participants are: 
+XEzdD
+You: XNLTY
+@ 2021/12/10 20:12:23: ids~The IDs of the group chat participants are: 
+XNLTY
+You: XEzdD encrypted as 2yh~pV+.O7?G R.o"ei0za:=-6V4t.kl/*whT7e.vA $spTk_ctvxq:"fqGicP-yt
+@ 2021/12/10 20:12:23: ids~The IDs of the group chat participants are: 
+XNLTY
+You: XEzdD
+@ 2021/12/10 20:12:23: Waiting for a client...
+@ 2021/12/10 20:12:23: Line: (Xlb:~36046
+@ 2021/12/10 20:12:23: (Xlb: decrypted as hello
+@ 2021/12/10 20:12:23: Message from client XEzdD: hello
+@ 2021/12/10 20:12:23: User XEzdD said: hello encrypted as .?v/iU$rw/-GkFzSGabmm:
+@ 2021/12/10 20:12:23: You said: hello encrypted as j,=GskFwTG(pv!o
+@ 2021/12/10 20:12:29: Client 3 accepted on : Socket[addr=/127.0.0.1,port=49260,localport=80]
+@ 2021/12/10 20:12:29: Chat Server Thread Info: server: main.ChatServer@624a7c0c socket: Socket[addr=/127.0.0.1,port=49260,localport=80] ID: UChkT
+@ 2021/12/10 20:12:29: id~UChkT encrypted as i+~Lh5NO
+@ 2021/12/10 20:12:29: Server Thread UChkT running.
+@ 2021/12/10 20:12:29: ids~The IDs of the group chat participants are: 
+XEzdD
+UChkT
+You: XNLTY encrypted as m+j~p"e ODskK).8cai(kni=BLuT*9UJ3qTpwpa/xA$$/e-._Rlr.YC0P ?TCkfum cBsXJ
+@ 2021/12/10 20:12:29: ids~The IDs of the group chat participants are: 
+XEzdD
+UChkT
+You: XNLTY
+@ 2021/12/10 20:12:29: ids~The IDs of the group chat participants are: 
+XNLTY
+UChkT
+You: XEzdD encrypted as ,zj~Xc30PaAko)G*uakyifu,kqhJxB!$Vomq2O4h*hi$ie- Vzi;XjVQHhmZJq ?GBX1-+z
+@ 2021/12/10 20:12:29: ids~The IDs of the group chat participants are: 
+XNLTY
+UChkT
+You: XEzdD
+@ 2021/12/10 20:12:29: ids~The IDs of the group chat participants are: 
+XNLTY
+XEzdD
+You: UChkT encrypted as mz?~QYakMEsG k *h?izn:qcB)cezGg*zqppi7anqh-4/eTBiR;VVqCUbL+W_P0sm.Eha/^
+@ 2021/12/10 20:12:29: ids~The IDs of the group chat participants are: 
+XNLTY
+XEzdD
+You: UChkT
+@ 2021/12/10 20:12:29: Waiting for a client...
+@ 2021/12/10 20:12:29: Line: h+m',~04274
+@ 2021/12/10 20:12:29: h+m', decrypted as hello
+@ 2021/12/10 20:12:29: Message from client UChkT: hello
+@ 2021/12/10 20:12:29: User UChkT said: hello encrypted as 0"bnBlQhkX9heoB
+9aXu^K
+@ 2021/12/10 20:12:29: User UChkT said: hello encrypted as 0Gvs-0,upd$wJiw
+9 +^v:
+@ 2021/12/10 20:12:29: You said: hello encrypted as qfq.ohiBH-(bw^ 
+@ 2021/12/10 20:12:35: Client 4 accepted on : Socket[addr=/127.0.0.1,port=49261,localport=80]
+@ 2021/12/10 20:12:35: Chat Server Thread Info: server: main.ChatServer@624a7c0c socket: Socket[addr=/127.0.0.1,port=49261,localport=80] ID: RRwld
+@ 2021/12/10 20:12:35: id~RRwld encrypted as ow~Ki*vz
+@ 2021/12/10 20:12:35: Server Thread RRwld running.
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XEzdD
+UChkT
+RRwld
+You: XNLTY encrypted as rwo~OaSGmZs$,f9qcv (/Zq7i)YJt Ulk*opFka
+RG.$nXm.JFPj5ZVjHV x_SNaDUaBZi-.FOB^P
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XEzdD
+UChkT
+RRwld
+You: XNLTY
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XNLTY
+UChkT
+RRwld
+You: XEzdD encrypted as me7~phv.W7GkaP 85a-JnnuO-. **kge3Rrh2!4.8"k$/bmkVXtLpqMLh(/p+IiQu.Cjaq:kK1b5Z
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XNLTY
+UChkT
+RRwld
+You: XEzdD
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XNLTY
+XEzdD
+RRwld
+You: UChkT encrypted as peG~^YvknWw9 oiqu3-_sK?pk)h*q0kJzzwc2=aD*A-espS0+zX O"
+zA4+taiSEwBC" =m$jh"QQ
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XNLTY
+XEzdD
+RRwld
+You: UChkT
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XNLTY
+XEzdD
+UChkT
+You: RRwld encrypted as 2U"~XY3-nYh9f'$8cSGyknqpi^akqBp4kxo^ophbxGBekSSiaRtLxkVKzd+YVlCa8xiB:lGBKZdlU
+@ 2021/12/10 20:12:35: ids~The IDs of the group chat participants are: 
+XNLTY
+XEzdD
+UChkT
+You: RRwld
+@ 2021/12/10 20:12:35: Waiting for a client...
+@ 2021/12/10 20:12:35: Line: cp^mo~12620
+@ 2021/12/10 20:12:35: cp^mo decrypted as hello
+@ 2021/12/10 20:12:35: Message from client RRwld: hello
+@ 2021/12/10 20:12:35: User RRwld said: hello encrypted as Qs?sBSIsvy$oJFeG9uv'w0
+@ 2021/12/10 20:12:35: User RRwld said: hello encrypted as EGS3-Sb*u+B7$rd
+Bh?D^,
+@ 2021/12/10 20:12:35: User RRwld said: hello encrypted as jwXz RNsm.BjTmd- cebvo
+@ 2021/12/10 20:12:35: You said: hello encrypted as B0q0w*w5G.aewwa
+@ 2021/12/10 20:20:12: Line:  pGS"+s(0D+~24676424574
+@ 2021/12/10 20:20:12:  pGS"+s(0D+ decrypted as hi everyone
+@ 2021/12/10 20:20:12: Message from client XNLTY: hi everyone
+@ 2021/12/10 20:20:12: You said: hi everyone encrypted as :niio4i5G9hwB+"b39,bS
+@ 2021/12/10 20:20:12: User XNLTY said: hi everyone encrypted as l7S/-TX Zqk?Jmd-9"o bv+kpZhe
+@ 2021/12/10 20:20:12: User XNLTY said: hi everyone encrypted as SA3r0ToUZF o4TBTBhr$v9pV9o
+v
+@ 2021/12/10 20:20:12: User XNLTY said: hi everyone encrypted as U"ai-"HLxF0sa25mkhFkbtSOIo.3
+@ 2021/12/10 20:20:32: Line: 73i"hRS~XBL+Y-U4 NQ~"i )OFexz~56061872097523072722400488089
+@ 2021/12/10 20:20:32: 73i"hRS~XBL+Y-U4 NQ~"i )OFexz decrypted as private~XEzdD UChkT~hi friend
+@ 2021/12/10 20:20:32: Message from XNLTY: hi friend
+@ 2021/12/10 20:20:32: You said: hi friend encrypted as "Zs0oJodHkVo0'ko3DU
+@ 2021/12/10 20:20:32: finding client with ID XNLTY
+@ 2021/12/10 20:20:32: Found client with ID named XNLTY
+@ 2021/12/10 20:20:32: finding client with ID XEzdD
+@ 2021/12/10 20:20:32: Found client with ID named XEzdD
+@ 2021/12/10 20:20:32: from id: XNLTY
+@ 2021/12/10 20:20:32: recipient id: XEzdD
+@ 2021/12/10 20:20:32: Private message 'hi friend' sent from XNLTY to XEzdD
+@ 2021/12/10 20:20:32: Private message from User XNLTY: hi friend encrypted as vr,Za pki??7egXkPOnikS?anB_;sOqmkumie3p3be
+@ 2021/12/10 20:20:32: finding client with ID UChkT
+@ 2021/12/10 20:20:32: Found client with ID named UChkT
+@ 2021/12/10 20:20:32: from id: XNLTY
+@ 2021/12/10 20:20:32: recipient id: UChkT
+@ 2021/12/10 20:20:32: Private message 'hi friend' sent from XNLTY to UChkT
+@ 2021/12/10 20:20:32: Private message from User XNLTY: hi friend encrypted as P3r"JzXkdXowJqX9y/:i.l7ak0XosOk'.ho0)zrSh+
+@ 2021/12/10 20:41:36: Line: a3yk4uw~9509513
+@ 2021/12/10 20:41:36: a3yk4uw decrypted as hey all
+@ 2021/12/10 20:41:36: Message from client RRwld: hey all
+@ 2021/12/10 20:41:36: User RRwld said: hey all encrypted as 0jXnBbbavd$?*,5S-5?b hul
+@ 2021/12/10 20:41:36: User RRwld said: hey all encrypted as jwXO9N)abzksardSB eb$JDw
+@ 2021/12/10 20:41:36: User RRwld said: hey all encrypted as Sw?O RN*v+k"Trym-abb$4wm
+@ 2021/12/10 20:41:36: You said: hey all encrypted as "n?.?ho.SkuvCBauD
+@ 2021/12/10 20:41:52: Line: c/2ZT b~U$z.DBQs pV~"?9.jK:~956865912604071429174361987
+@ 2021/12/10 20:41:52: c/2ZT b~U$z.DBQs pV~"?9.jK: decrypted as private~XEzdD UChkT~hey you
+@ 2021/12/10 20:41:52: Message from RRwld: hey you
+@ 2021/12/10 20:41:52: You said: hey you encrypted as q,W9?*pUmGc+=$Cnl
+@ 2021/12/10 20:41:52: finding client with ID RRwld
+@ 2021/12/10 20:41:52: Found client with ID named RRwld
+@ 2021/12/10 20:41:52: finding client with ID XEzdD
+@ 2021/12/10 20:41:52: Found client with ID named XEzdD
+@ 2021/12/10 20:41:52: from id: RRwld
+@ 2021/12/10 20:41:52: recipient id: XEzdD
+@ 2021/12/10 20:41:52: Private message 'hey you' sent from RRwld to XEzdD
+@ 2021/12/10 20:41:52: Private message from User RRwld: hey you encrypted as Pi2gat?9iaA7hhS Pkam l7Xs RZf!B'BapbB=,u
+@ 2021/12/10 20:41:52: finding client with ID UChkT
+@ 2021/12/10 20:41:52: Found client with ID named UChkT
+@ 2021/12/10 20:41:52: from id: RRwld
+@ 2021/12/10 20:41:52: recipient id: UChkT
+@ 2021/12/10 20:41:52: Private message 'hey you' sent from RRwld to UChkT
+@ 2021/12/10 20:41:52: Private message from User RRwld: hey you encrypted as CVm9hvp-feshThb-Rnni$lGX/.bSQwzSk5bpG9fi
+@ 2021/12/10 20:42:17: Line: _=p~652
+@ 2021/12/10 20:42:17: _=p decrypted as bye
+@ 2021/12/10 20:42:17: Message from client XNLTY: bye
+@ 2021/12/10 20:42:17: You said: bye encrypted as P0s ?Ti+:$t9S
+@ 2021/12/10 20:42:17: User XNLTY said: bye encrypted as lsaV$U;BxF$?42dG92(a
+@ 2021/12/10 20:42:17: User XNLTY said: bye encrypted as Ispn c;;dkB"Tp5:0c=e
+@ 2021/12/10 20:42:17: User XNLTY said: bye encrypted as S7br$z;WXq "l2UH.bfp
+@ 2021/12/10 20:42:17: finding client with ID XNLTY
+@ 2021/12/10 20:42:17: Found client with ID named XNLTY
+@ 2021/12/10 20:42:17: Removing client 1 with ID XNLTY
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+UChkT
+RRwld
+You: XEzdD encrypted as i.o~due0nzs$KyGqaaG(3,e!BL54xGckrRih,,lbxGBhn3S-MQ4Y/QM5b6!5J:aie.cALeE
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+UChkT
+RRwld
+You: XEzdD
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+XEzdD
+RRwld
+You: UChkT encrypted as FBG~dcviOY"k:'-o +BmsflU$qV*tGkhi82pTkJ1qAGaOSG aRl +EaZNdbU_Pnqe E,YNx
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+XEzdD
+RRwld
+You: UChkT
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+XEzdD
+UChkT
+You: RRwld encrypted as ,+G~Q"?0O/j$f)-va+GzkZe!k^(kq.,JroF^wcJntj9h/STBi"zb5a_Ihu;XVjKqe Iis^U
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+XEzdD
+UChkT
+You: RRwld
+@ 2021/12/10 20:42:17: finding client with ID XNLTY
+@ 2021/12/10 20:42:17: No such client with ID XNLTY
+@ 2021/12/10 20:42:17: Line: 2yp~502
+@ 2021/12/10 20:42:17: 2yp decrypted as bye
+@ 2021/12/10 20:42:17: Message from client XEzdD: bye
+@ 2021/12/10 20:42:17: You said: bye encrypted as Josi?*,wT$bfa
+@ 2021/12/10 20:42:17: User XEzdD said: bye encrypted as U?v/$zzbwZ-7*,eS.ej?
+@ 2021/12/10 20:42:17: User XEzdD said: bye encrypted as Q7ezGzBj5Dihhp.Gk!fS
+@ 2021/12/10 20:42:17: finding client with ID XEzdD
+@ 2021/12/10 20:42:17: Found client with ID named XEzdD
+@ 2021/12/10 20:42:17: Removing client 1 with ID XEzdD
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+RRwld
+You: UChkT encrypted as T."~paakIW"$K; *(eiyz ick6 *RkkTkvF.wg*
+ohGaOb-k_R5fvy:qKlS9LH"QV
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+RRwld
+You: UChkT
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+UChkT
+You: RRwld encrypted as FyG~dVeGRDwi,f9q"X.yzn?!GL(e8$gasxiLwg$b ?$$kaGkiSHupT
+q,?G-Z)fud
+@ 2021/12/10 20:42:17: ids~The IDs of the group chat participants are: 
+UChkT
+You: RRwld
+@ 2021/12/10 20:42:17: finding client with ID XEzdD
+@ 2021/12/10 20:42:17: No such client with ID XEzdD
+@ 2021/12/10 20:42:20: Line: efv~118
+@ 2021/12/10 20:42:20: efv decrypted as bye
+@ 2021/12/10 20:42:20: Message from client UChkT: bye
+@ 2021/12/10 20:42:20: You said: bye encrypted as kai jam+HGn=?
+@ 2021/12/10 20:42:20: User UChkT said: bye encrypted as E"aVG.4u8ZkoTpyS$-9+
+@ 2021/12/10 20:42:20: finding client with ID UChkT
+@ 2021/12/10 20:42:20: Found client with ID named UChkT
+@ 2021/12/10 20:42:20: Removing client 1 with ID UChkT
+@ 2021/12/10 20:42:20: ids~The IDs of the group chat participants are: 
+You: RRwld encrypted as iw"~ZYX9(t?BZkBo"b.znoW,B^(ht$gTOvFqm,lDRoBlOpTBV:ZWTBK)dv5
+@ 2021/12/10 20:42:20: ids~The IDs of the group chat participants are: 
+You: RRwld
+@ 2021/12/10 20:42:20: finding client with ID UChkT
+@ 2021/12/10 20:42:20: No such client with ID UChkT
+@ 2021/12/10 20:42:20: Line: tbb~829
+@ 2021/12/10 20:42:20: tbb decrypted as bye
+@ 2021/12/10 20:42:20: Message from client RRwld: bye
+@ 2021/12/10 20:42:20: You said: bye encrypted as "fl hkFB-$WCS
+@ 2021/12/10 20:42:20: finding client with ID RRwld
+@ 2021/12/10 20:42:20: Found client with ID named RRwld
+@ 2021/12/10 20:42:20: Removing client 1 with ID RRwld
+@ 2021/12/10 20:42:20: finding client with ID RRwld
+@ 2021/12/10 20:42:20: No such client with ID RRwld
